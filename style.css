@@ -251,3 +251,15 @@ body{line-height:1.65;letter-spacing:-.015em}
 @media(min-width:901px) and (max-width:1100px){
  #project-grid .project-card{grid-template-columns:minmax(0,1fr);gap:24px}
 }
+
+/* Main WORK reading order: category, name, result, one-line context, tools. */
+#project-grid .project-identity{max-width:none}
+#project-grid .project-card h3{margin:12px 0 0;font-size:clamp(24px,2.15vw,32px);line-height:1.35}
+#project-grid .project-proof{margin:24px 0 0;gap:10px 14px}
+#project-grid .project-proof strong{font-size:clamp(34px,3.3vw,46px);line-height:1.12;letter-spacing:-.035em}
+#project-grid .project-proof>span{font-size:13px;line-height:1.5}
+#project-grid .project-card .project-summary{margin:16px 0 0;font-size:15px;line-height:1.75;max-width:none;text-wrap:pretty}
+#project-grid .project-tools{margin-top:18px;font-size:12px;line-height:1.7;gap:8px 12px}
+#project-grid .project-tools small{font-size:9px;letter-spacing:.1em}
+@media(min-width:1101px){#project-grid .project-card{grid-template-rows:auto 1fr}#project-grid .project-art{align-self:start}#project-grid .project-cta{padding-top:28px}}
+@media(max-width:600px){#project-grid .project-proof{margin-top:22px}#project-grid .project-proof strong{font-size:36px}#project-grid .project-card .project-summary{font-size:14px}#project-grid .project-tools{font-size:11px}}
