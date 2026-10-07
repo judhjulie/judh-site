@@ -1,0 +1,9 @@
+{
+  "source": "https://github.com/pqml/spring",
+  "commit": "b025fdac71e31f20180fec84821a2ceeb04bdc8e",
+  "license": "MIT",
+  "runtime": "vendor/pqml-spring/Spring.js",
+  "sha256": "6dc58e8bde42b0e14dbdd751f6a58c808e2e06daa92e3c0a01d43e0f96a412d8",
+  "designReference": "https://tympanus.net/codrops/2018/12/06/interactive-repulsion-effect-with-three-js/",
+  "note": "Unmodified Spring source is used in the runtime. Codrops is a design reference; its old GSAP/Three.js code is not bundled."
+}
