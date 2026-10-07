@@ -67,3 +67,5 @@ body{background:var(--cream)}
 .resume-tool-use{display:block;font-size:11px;line-height:1.8;color:var(--copy);margin-top:9px;word-break:keep-all}
 .resume-project-tools{font-size:11px;line-height:1.8;color:var(--copy);margin:10px 0 0}
 @media print{.resume-level-bars .filled{background:transparent;border:2px solid currentColor;print-color-adjust:exact}.resume-project-career{break-inside:avoid;padding:10px 0}.resume-project-career h3{font-size:10px}.resume-project-career .resume-role,.resume-tool-note,.resume-tool-use,.resume-project-tools{font-size:9px}}
+.resume-proof-note{font-size:12px;line-height:1.8;color:var(--copy);max-width:60ch;margin:8px 0 12px}.resume-achievement strong{font-weight:650}
+@media print{.resume-proof-note{font-size:9px;line-height:1.5;margin:4px 0}}
