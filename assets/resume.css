@@ -1,0 +1,69 @@
+body{background:var(--cream)}
+.resume-page{max-width:1120px;margin:auto;padding:54px 6vw 90px}
+.resume-page .resume-toolbar{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-bottom:64px}
+.resume-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.resume-page button{padding:12px 20px;border-radius:30px;border:1px solid #17475f50;background:none;color:inherit;font:inherit;font-size:12px;cursor:pointer}
+#pdf-download{font-size:12px;text-decoration:underline}
+.resume-title{margin-bottom:48px}
+.resume-page h1{font-size:clamp(52px,7vw,84px);letter-spacing:-.065em;line-height:1.08;font-weight:600;margin:0 0 24px;overflow-wrap:anywhere}
+.resume-page .tagline{font-size:24px;font-weight:500;letter-spacing:-.035em;margin:0}
+.resume-page .resume-section{border-radius:0;background:transparent}
+.resume-section{display:grid;grid-template-columns:190px minmax(0,1fr);gap:36px;border-top:1px solid #17475f29;padding:38px 0}
+.resume-section>h2{font-size:21px;font-weight:600;line-height:1.5;letter-spacing:-.035em;margin:0}
+.resume-section>h2 small{display:block;font-size:10px;font-weight:400;letter-spacing:.1em;margin-bottom:8px;color:var(--copy)}
+.resume-page .intro{font-size:14px;line-height:1.9;max-width:62ch;word-break:keep-all;margin:0 0 25px}
+#resume-basics{display:grid;grid-template-columns:1fr 1fr;gap:20px 28px;margin:0}
+.resume-fact dt{font-size:11px;color:var(--copy);margin-bottom:7px}
+.resume-fact dd{font-size:14px;line-height:1.7;margin:0;overflow-wrap:anywhere;white-space:pre-line}
+#resume-links{display:flex;flex-wrap:wrap;gap:16px;margin-top:20px;font-size:12px;text-decoration:underline}
+#resume-links:empty{display:none}
+.resume-entry,.resume-work{padding:0 0 26px;margin:0 0 26px;border-bottom:1px solid #17475f1c}
+.resume-entry:last-child,.resume-work:last-child{padding-bottom:0;margin-bottom:0;border-bottom:0}
+.resume-entry-heading{display:flex;align-items:baseline;justify-content:space-between;gap:22px}
+.resume-page h3{font-size:17px;font-weight:600;letter-spacing:-.02em;line-height:1.6;margin:0}
+.resume-page time{font-size:12px;line-height:1.7;color:var(--copy);white-space:nowrap;font-variant-numeric:tabular-nums}
+.resume-achievement{font-size:15px;font-weight:550;line-height:1.9;margin:12px 0 8px;word-break:keep-all}
+.resume-role,.resume-work-context{font-size:13px;line-height:1.9;color:var(--copy);margin:7px 0;word-break:keep-all}
+.resume-work a{display:inline-block;font-size:12px;text-decoration:underline;text-underline-offset:4px;margin-top:12px}
+.resume-entry ul{font-size:13px;line-height:1.9;padding-left:19px;margin:10px 0 0}
+.resume-entry li+li{margin-top:6px}
+.resume-pending{font-size:13px;line-height:1.8;color:var(--copy);margin:0}
+#resume-tools{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+#resume-tools>.resume-pending{grid-column:1/-1}
+.resume-tool h3{font-size:15px}.resume-tool p{font-size:13px;color:var(--copy);line-height:1.8;margin:6px 0 0}
+.resume-experience{display:grid;grid-template-columns:24px minmax(0,1fr) auto;align-items:baseline;gap:14px;border-bottom:1px solid #17475f1c;padding:18px 0}
+.resume-experience:first-child{padding-top:0}.resume-experience:last-child{border-bottom:0;padding-bottom:0}
+.resume-experience h3{font-size:14px;font-weight:500}
+.resume-index,.resume-type{font-size:10px;color:var(--copy)}
+.resume-type{display:inline-block;margin-top:5px}
+.resume-subheading{margin:28px 0 14px!important}
+.resume-credential{display:flex;align-items:baseline;gap:16px;font-size:13px;line-height:1.8;margin:12px 0}
+.resume-credential strong{font-weight:500}.resume-credential span{color:var(--copy)}
+.resume-footer{padding-top:25px;border-top:1px solid #17475f29;display:flex;justify-content:space-between;gap:16px;font-size:11px;color:var(--copy)}
+@media(max-width:760px){
+ .resume-page{padding:30px 7vw 60px}.resume-page .resume-toolbar{margin-bottom:46px;align-items:flex-start}.resume-toolbar .brand{font-size:16px}.resume-actions{justify-content:flex-end;gap:12px}
+ .resume-page button{font-size:11px;padding:10px 14px}.resume-page h1{font-size:clamp(40px,13vw,68px)}.resume-page .tagline{font-size:20px;line-height:1.6;word-break:keep-all}
+ .resume-section{grid-template-columns:minmax(0,1fr);gap:24px;padding:30px 0}.resume-section>h2 small{display:inline;margin:0 12px 0 0}.resume-section>h2{font-size:20px}
+ #resume-basics{grid-template-columns:minmax(0,1fr)}.resume-page .intro{font-size:13px}.resume-entry-heading{display:block}.resume-entry-heading time{display:block;margin-top:5px}
+ .resume-experience{grid-template-columns:22px minmax(0,1fr);gap:10px}.resume-experience time{grid-column:2}.resume-experience h3{font-size:14px}.resume-credential{flex-wrap:wrap}
+}
+@media print{
+ html{scroll-behavior:auto}body{background:#fff;color:#193d4f}.resume-page{max-width:none;padding:0}.resume-toolbar{display:none!important}.resume-title{margin-bottom:25px}
+ .resume-page .eyebrow{font-size:9px}.resume-page h1{font-size:42px;margin-bottom:14px}.resume-page .tagline{font-size:17px}
+ .resume-section{grid-template-columns:110px minmax(0,1fr);gap:20px;padding:22px 0}.resume-section>h2{font-size:15px;break-after:avoid}
+ .resume-section>h2 small{font-size:8px}.resume-page .intro{font-size:10px;line-height:1.7;margin-bottom:15px}#resume-basics{gap:12px 20px}
+ .resume-fact dt{font-size:8px}.resume-fact dd{font-size:10px}.resume-page h3{font-size:12px}.resume-page time{font-size:9px}
+ .resume-entry,.resume-work{break-inside:avoid;padding-bottom:18px;margin-bottom:18px}.resume-achievement{font-size:10px;line-height:1.7;margin-top:7px}.resume-role,.resume-work-context,.resume-entry ul{font-size:9px;line-height:1.7}
+ .resume-work a,.resume-empty,#resume-links,.resume-footer{display:none}.resume-experience{break-inside:avoid;padding:10px 0;gap:10px}.resume-experience h3{font-size:10px}.resume-index,.resume-type{font-size:8px}.resume-tool h3{font-size:11px}.resume-tool p,.resume-credential{font-size:9px}
+ @page{size:A4;margin:16mm}
+}
+
+.resume-project-career{padding:18px 0;border-bottom:1px solid #17475f1c}.resume-project-career:last-child{padding-bottom:0;border-bottom:0}
+.resume-project-career h3{font-size:14px;font-weight:500}.resume-project-career .resume-role{font-size:12px}
+.resume-tool-note{font-size:11px;line-height:1.8;color:var(--copy);margin:0 0 22px}
+.resume-tool-heading{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.resume-tool-level{display:flex;align-items:center;gap:10px;font-size:11px}.resume-level-bars{display:flex;gap:3px}
+.resume-level-bars i{display:block;width:16px;height:4px;border:1px solid #17475f50;border-radius:2px}.resume-level-bars .filled{background:var(--ink)}
+.resume-tool-use{display:block;font-size:11px;line-height:1.8;color:var(--copy);margin-top:9px;word-break:keep-all}
+.resume-project-tools{font-size:11px;line-height:1.8;color:var(--copy);margin:10px 0 0}
+@media print{.resume-level-bars .filled{background:transparent;border:2px solid currentColor;print-color-adjust:exact}.resume-project-career{break-inside:avoid;padding:10px 0}.resume-project-career h3{font-size:10px}.resume-project-career .resume-role,.resume-tool-note,.resume-tool-use,.resume-project-tools{font-size:9px}}
