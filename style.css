@@ -164,7 +164,7 @@ body{line-height:1.65;letter-spacing:-.015em}
  .results-strip{grid-template-columns:1fr;margin-block:28px;gap:0;padding-bottom:8px}
  .result{display:flex;align-items:center;gap:24px;padding-block:14px;border-top:1px solid var(--rule)}
  .result strong{font-size:34px;min-width:105px}.result span{font-size:14px;margin:0;line-height:1.6}
- .detail-cover{aspect-ratio:4/3}.cover-label{font-size:11px;left:10px;bottom:10px;max-width:calc(100% - 20px)}
+ .detail-cover{aspect-ratio:16/9}.cover-label{font-size:11px;left:10px;bottom:10px;max-width:calc(100% - 20px)}
  .meta-grid{margin-block:20px 32px}.meta-item{font-size:14px;padding-block:12px}
  .detail-body{display:block}.detail-body>span{margin-bottom:28px}
  .story-block h3{font-size:22px}.story-block p{font-size:16px;line-height:1.9}
