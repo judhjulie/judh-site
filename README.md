@@ -1,11 +1,8 @@
-# judh Portfolio
+# judh — 공개 포트폴리오
 
-여름과 바다를 테마로 한 주동하의 포트폴리오입니다.
+https://judhjulie.github.io/judh-site/
 
-사이트: https://judhjulie.github.io/judh-site/
-
-이 저장소에는 공개 사이트에 필요한 파일만 들어 있습니다. GitHub Pages는 main 브랜치의 루트 폴더를 게시합니다. 파일 수정 후 Commit → Push하면 사이트가 자동으로 업데이트됩니다.
-
-콘텐츠 편집 화면의 브라우저 저장은 해당 브라우저에만 적용됩니다. 다른 방문자에게도 반영하려면 편집 화면에서 portfolio-data.js를 내보내 이 저장소의 같은 파일을 교체하고 커밋하세요. 이미지는 assets/에 추가하세요.
-
-원본 제작 파일과 편집기 소스는 별도 비공개 저장소에서 관리합니다.
+GitHub Pages는 이 저장소의 main에서 정적 사이트를 제공합니다.
+비공개 원본은 judhjulie/judh-portfolio에 있습니다. 이 저장소에는 원본의 ornha-public/ 파일만 반영합니다.
+관리자 편집과 Save는 Supabase Auth/Database/Storage를 사용하며, 콘텐츠 수정에 GitHub 배포는 필요 없습니다.
+공개 키는 cms-config.js에 있으며 저장·업로드 권한은 Supabase RLS로 제한됩니다.

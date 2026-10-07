@@ -19,3 +19,6 @@
 #login-status{min-height:24px;font-size:12px;line-height:1.7;margin:12px 0;color:#9d4650}#unlock-editor{display:flex;justify-content:space-between;align-items:center;width:100%;padding:17px 20px;border:0;border-radius:12px;background:#226e96;color:white;font:inherit;font-size:14px}#unlock-editor:disabled{opacity:.55;cursor:wait}.login-back{display:block;text-align:center;margin-top:24px;font-size:12px;text-decoration:underline;text-underline-offset:4px}
 .lock-editor{margin-left:auto;padding:9px 13px;border:1px solid #17475f40;border-radius:20px;background:transparent;font:inherit;font-size:11px;color:inherit}.editor-head .lock-editor+.back-site{margin-left:0}
 @media(max-width:500px){.editor-gate{padding:30px 24px}.editor-gate>.brand{margin-bottom:34px}.editor-head{gap:8px}.editor-head .lock-editor{padding:7px 9px;font-size:10px}.editor-head .back-site{font-size:9px}}
+/* Match the existing password field for the account identifier. */
+#editor-email{display:block;width:100%;padding:15px;border:1px solid #17475f35;border-radius:12px;background:#fff;font:inherit;color:inherit;margin:0 0 20px}
+#editor-email:focus-visible{outline:2px solid #2476a2;outline-offset:3px}
