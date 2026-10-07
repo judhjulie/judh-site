@@ -88,7 +88,7 @@ body{line-height:1.65;letter-spacing:-.015em}
 .project-cta{font-size:14px;font-weight:600;display:flex;gap:18px;align-items:center;margin-top:18px;padding-top:0;color:var(--action)}
 .project-cta>span{font-size:20px}
 #project-grid .project-art{width:100%;aspect-ratio:16/9;align-self:center;border-radius:16px;box-shadow:0 12px 28px #286d8b12}
-#project-grid .project-art img{object-fit:contain}
+#project-grid .project-art img{object-fit:cover;object-position:center}
 .project-art img{transition:transform .6s cubic-bezier(.16,1,.3,1)}
 .project-art .open-arrow{width:48px;height:48px}
 .project-edit,.work-edit-link,.detail-edit{font-size:13px;color:var(--copy)}
