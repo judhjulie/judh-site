@@ -77,8 +77,8 @@ body{line-height:1.65;letter-spacing:-.015em}
 .work-heading em,.resume-head em{color:var(--action)}
 #project-grid{gap:0}
 #project-grid .project-item{max-width:var(--content-width);padding:40px 0;border-top:1px solid var(--rule);scroll-margin-top:104px}
-#project-grid .project-card{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:40px;align-items:center;min-height:0}
-.project-copy{min-width:0;display:flex;flex-direction:column;align-items:flex-start;align-self:center}
+#project-grid .project-card{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:40px;align-items:stretch;min-height:0}
+.project-copy{min-width:0;display:flex;flex-direction:column;align-items:flex-start;align-self:stretch}
 .project-meta{width:100%;padding:0;font-size:12px;letter-spacing:.03em;color:var(--copy);gap:16px}
 #project-grid .project-card h3{font-size:clamp(23px,1.9vw,27px);font-weight:650;line-height:1.4;letter-spacing:-.035em;margin:12px 0 16px;min-height:0;text-wrap:balance;word-break:keep-all}
 .project-proof{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px;font-variant-numeric:tabular-nums}
@@ -231,3 +231,22 @@ body{line-height:1.65;letter-spacing:-.015em}
 #project-grid h3 .project-subtitle{display:block;margin-top:10px;font-size:clamp(18px,1.5vw,20px);font-weight:600;line-height:1.5;letter-spacing:-.025em;text-wrap:balance}
 .detail-intro h2 .project-brand{display:block;font-size:clamp(40px,4.5vw,64px);font-weight:700;line-height:1.15}
 .detail-intro h2 .project-subtitle{display:block;margin-top:14px;font-size:clamp(20px,2vw,26px);font-weight:600;line-height:1.5;letter-spacing:-.025em}
+
+/* Align the category and bottom action with the 16:9 cover. */
+@media(min-width:1101px){
+ #project-grid .project-copy{padding-block:0}
+ #project-grid .project-meta{font-size:11px;line-height:1.6}
+ #project-grid .project-card h3{margin:8px 0 12px;font-size:clamp(22px,1.8vw,26px);line-height:1.35}
+ #project-grid h3 .project-brand{font-size:clamp(30px,2.6vw,36px);line-height:1.12}
+ #project-grid h3 .project-subtitle{font-size:16px;line-height:1.45;margin-top:6px;text-wrap:pretty}
+ #project-grid .project-proof{margin-bottom:10px;gap:10px}
+ #project-grid .project-proof strong{font-size:clamp(30px,2.5vw,36px)}
+ #project-grid .project-proof>span{font-size:12px}
+ #project-grid .project-card p{font-size:14px;line-height:1.65;max-width:none}
+ #project-grid .project-tools{margin-top:10px;font-size:11px;line-height:1.65}
+ #project-grid .project-cta{margin-top:auto;padding-top:16px;line-height:1.6}
+ #project-grid .project-cta>span{font-size:18px;line-height:inherit}
+}
+@media(min-width:901px) and (max-width:1100px){
+ #project-grid .project-card{grid-template-columns:minmax(0,1fr);gap:24px}
+}
