@@ -225,3 +225,9 @@ body{line-height:1.65;letter-spacing:-.015em}
 .detail-tools dl{margin:0;display:grid;gap:16px}.detail-tools dl>div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:18px;font-size:14px;line-height:1.8}
 .detail-tools dt{font-weight:600}.detail-tools dd{margin:0;color:var(--copy);word-break:keep-all}
 @media(max-width:600px){.detail-tools{display:block;margin:0 7vw 32px}.detail-tools h3{margin-bottom:22px}.detail-tools dl>div{grid-template-columns:100px minmax(0,1fr);gap:14px;font-size:13px}}
+
+/* Company names and case-study subtitles share one editable title. */
+#project-grid h3 .project-brand{display:block;font-size:clamp(36px,3.6vw,48px);font-weight:700;line-height:1.15;letter-spacing:-.035em}
+#project-grid h3 .project-subtitle{display:block;margin-top:10px;font-size:clamp(18px,1.5vw,20px);font-weight:600;line-height:1.5;letter-spacing:-.025em;text-wrap:balance}
+.detail-intro h2 .project-brand{display:block;font-size:clamp(40px,4.5vw,64px);font-weight:700;line-height:1.15}
+.detail-intro h2 .project-subtitle{display:block;margin-top:14px;font-size:clamp(20px,2vw,26px);font-weight:600;line-height:1.5;letter-spacing:-.025em}
