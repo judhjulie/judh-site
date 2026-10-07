@@ -232,20 +232,21 @@ body{line-height:1.65;letter-spacing:-.015em}
 .detail-intro h2 .project-brand{display:block;font-size:clamp(40px,4.5vw,64px);font-weight:700;line-height:1.15}
 .detail-intro h2 .project-subtitle{display:block;margin-top:14px;font-size:clamp(20px,2vw,26px);font-weight:600;line-height:1.5;letter-spacing:-.025em}
 
-/* Align the category and bottom action with the 16:9 cover. */
+/* Keep project identity together; separate the action from the reading group. */
+#project-grid .project-identity{width:100%;max-width:38ch}
+#project-grid .project-meta{font-size:12px;line-height:1.6;letter-spacing:.02em}
+#project-grid .project-card h3{margin:20px 0 0;font-size:clamp(28px,2.5vw,34px);line-height:1.3;font-weight:650}
+#project-grid h3 .project-brand{font-size:clamp(36px,3.3vw,48px);line-height:1.12}
+#project-grid h3 .project-subtitle{margin-top:16px;font-size:18px;font-weight:400;line-height:1.65;text-wrap:pretty}
+#project-grid .project-card .project-intent{margin-top:16px;font-size:16px;line-height:1.75;max-width:34ch;text-wrap:pretty}
+#project-grid .project-cta{margin-top:0;padding-top:0;min-height:24px;line-height:1.7;font-size:14px;gap:16px}
+#project-grid .project-cta>span{font-size:20px;line-height:inherit}
 @media(min-width:1101px){
  #project-grid .project-copy{padding-block:0}
- #project-grid .project-meta{font-size:11px;line-height:1.6}
- #project-grid .project-card h3{margin:8px 0 12px;font-size:clamp(22px,1.8vw,26px);line-height:1.35}
- #project-grid h3 .project-brand{font-size:clamp(30px,2.6vw,36px);line-height:1.12}
- #project-grid h3 .project-subtitle{font-size:16px;line-height:1.45;margin-top:6px;text-wrap:pretty}
- #project-grid .project-proof{margin-bottom:10px;gap:10px}
- #project-grid .project-proof strong{font-size:clamp(30px,2.5vw,36px)}
- #project-grid .project-proof>span{font-size:12px}
- #project-grid .project-card p{font-size:14px;line-height:1.65;max-width:none}
- #project-grid .project-tools{margin-top:10px;font-size:11px;line-height:1.65}
- #project-grid .project-cta{margin-top:auto;padding-top:16px;line-height:1.6}
- #project-grid .project-cta>span{font-size:18px;line-height:inherit}
+ #project-grid .project-card{grid-template-rows:auto 1fr;gap:0 40px}
+ #project-grid .project-copy{grid-column:1;grid-row:1}
+ #project-grid .project-art{grid-column:2;grid-row:1 / span 2}
+ #project-grid .project-cta{grid-column:1;grid-row:2;align-self:end;margin-top:0;padding-top:32px}
 }
 @media(min-width:901px) and (max-width:1100px){
  #project-grid .project-card{grid-template-columns:minmax(0,1fr);gap:24px}
